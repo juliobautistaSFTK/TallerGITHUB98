@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - DEV_JBCR
-  pull_request:
-    branches:
-      - DEV_JBCR
 
 jobs:
   build:
@@ -14,8 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout código
       uses: actions/checkout@v2
+      with:
+        repository: juliobautistaSFTK/TallerGITHUB
+        ref: DEV
 
     - name: Set up JDK 1.8
       uses: actions/setup-java@v2
