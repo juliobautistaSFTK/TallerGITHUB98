@@ -3,7 +3,7 @@ name: Build and Run Hello World Java Maven Project
 on:
   push:
     branches:
-      - DEV_JBCR
+      - main
 
 jobs:
   build:
