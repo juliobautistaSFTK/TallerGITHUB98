@@ -19,6 +19,3 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file hola-mundo/pom.xml
-
-    - name: Run Hello World
-      run: java -cp target/classes com.ejemplo.App
